@@ -39,6 +39,9 @@ backuphistpass=testpass
 # MariaDB schema for backup history
 backuphistschema=mdbutil
 
+# MariaDB schema for backup history
+backuphisttable=backup_history
+
 # If server is monitored by MONyog, should we disable alerts?
 monyog=no
 
