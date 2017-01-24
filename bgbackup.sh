@@ -423,10 +423,13 @@ function debugme {
 ############################################
 # Begin script
 
+conf=$1
 # find and source the config file
 etccnf=$( find /etc -name bgbackup.cnf )
 scriptdir=$( cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-if [ -e "$etccnf" ]; then
+if [ -e "$conf" ]; then
+    source "$conf"
+elif [ -e "$etccnf" ]; then
     source "$etccnf"
 elif [ -e "$scriptdir"/bgbackup.cnf ]; then
     source "$scriptdir"/bgbackup.cnf
