@@ -9,6 +9,12 @@
 # as today's date.
 checkmigrate=no
 
+#defaults-file
+defaultsfile=/etc/my.cnf
+
+#backup user cnf
+usercnf=/etc/user.root.cnf
+
 # MariaDB host (optional)
 #host=127.0.0.1
 
